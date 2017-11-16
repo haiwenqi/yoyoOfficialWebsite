@@ -1,0 +1,260 @@
+/*第一屏*/
+
+#firstPage {
+	position: relative;
+	min-width: 1080px;
+}
+
+.logo {
+	position: absolute;
+	top: 44px;
+	left: 144px;
+	width: 152px;
+	height: auto;
+	cursor: pointer;
+}
+
+.downLoadBtn {
+	width: 164px;
+	height: 60px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	padding: 0 26px;
+	position: absolute;
+	left: 144px;
+	bottom: 112px;
+	background: #fff;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(106,0,14,0.35);
+	-webkit-box-shadow: 0 2px 8px rgba(106,0,14,0.35);
+}
+
+.downLoadBtn p {
+	line-height: 60px;
+	float: left;
+	font-size: 30px;
+	color: #FF3B5E;
+}
+
+.downLoadBtn img {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-left: 12px;
+	margin-top: 14px;
+}
+
+
+/*第二屏*/
+
+#secondPage {
+	width: 100%;
+	min-width: 1080px;
+	height: 910px;
+	background: #fff;
+}
+
+#secondPage p {
+	text-align: center;
+	font-size: 36px;
+	color: #333;
+	padding-top: 178px;
+	padding-bottom: 60px;
+}
+
+
+#secondPage ul{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+#secondPage li {
+	float: left;
+	width: 352px;
+	height: 500px;
+	margin-right: 12px;
+}
+
+#secondPage li:nth-of-type(3) {
+	margin-right: 0;
+}
+
+
+/*第三屏*/
+
+#thirdPage {
+	width: 100%;
+	min-width: 1080px;
+	height: 698px;
+	background: #f4f4f4;
+}
+
+#thirdPage p {
+	text-align: center;
+	font-size: 36px;
+	color: #333;
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+#thirdPage ul{
+	width: 1080px;
+	margin: 0 auto;
+}
+#thirdPage ul li {
+	width: 262px;
+	height: 360px;
+	margin-right: 12px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+#thirdPage ul li:nth-of-type(2){
+	width: 260px;
+}
+#thirdPage ul li:nth-of-type(3){
+	width: 260px;
+}
+#thirdPage ul li:nth-of-type(4){
+	margin-right: 0;
+}
+
+#thirdPage ul li img {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.ovrly {
+	background: url(../img/yoyoOfficialWebsite_pc/hoverlay.png) no-repeat center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#thirdPage ul li:hover .ovrly {
+	opacity: 1;
+}
+
+.ovrly:after {
+	font-size: 48px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 360px;
+}
+
+.thirdPageImg_01 .ovrly:after {
+	content: "享美食";
+}
+
+.thirdPageImg_02 .ovrly:after {
+	content: "极运动";
+}
+
+.thirdPageImg_03 .ovrly:after {
+	content: "艺术范";
+}
+
+.thirdPageImg_04 .ovrly:after {
+	content: "去旅游";
+}
+
+
+/*底部*/
+
+footer {
+	width: 100%;
+	min-width: 1080px;
+	height: 352px;
+	background: url(../img/yoyoOfficialWebsite_pc/footerPageBG.png) no-repeat center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+
+footer img {
+	display: block;
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	padding-top: 76px;
+	margin-bottom: 8px;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+
+footer p:nth-of-type(1) {
+	padding-bottom: 20px;
+}
+
+footer p:nth-of-type(2) {
+	padding-bottom: 10px;
+}
+
+
+/*弹出遮罩层*/
+
+.bgPop {
+	display: none;
+	position: absolute;
+	z-index: 129;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-width: 1080px;
+	height: 100%;
+	background: rgba(0, 0, 0, .4);
+}
+
+.pop {
+	display: none;
+	width:1080px;
+	height: 644px;
+	position: absolute;
+	top: 124px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin:0 auto;
+	z-index: 130;
+	background-color: #fff;
+}
+.pop-close{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	z-index: 131;
+	cursor: pointer;
+}
+.pop-content img{
+	display: block;
+	margin: 0 auto;
+	width: 220px;
+	height: 220px;
+	margin-top: 132px;
+	margin-bottom: 50px;
+}
+.pop-content p{
+	text-align: center;
+	font-size: 30px;
+	color: #333;
+}
+.pop-content p:nth-of-type(1){
+	padding-bottom: 20px;
+}

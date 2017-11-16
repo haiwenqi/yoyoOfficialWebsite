@@ -1,0 +1,74 @@
+<!--
+	下载链接 微信环境打开？？
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="default" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+	    <meta name="full-screen" content="yes">
+	    <meta name="x5-fullscreen" content="true">
+	    <meta name="browsermode" content="application">
+	    <meta name="x5-page-mode" content="app">
+	    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="js/Swiper-3.4.2/dist/css/swiper.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="js/Swiper-3.4.2/dist/css/animate.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/yoyoOfficialWebsite_mobile.css"/>
+	    <!--适配屏幕-->
+		<script src="js/ydui.flexible.js" type="text/javascript" charset="utf-8"></script>
+		
+		<title>YOYO</title>
+	</head>
+	<body>
+		
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" id="slide1">
+	            	<div class="logo"><img src="img/yoyoOfficialWebsite_mobile/logo_mobile.png"/></div>
+	            	<div class="imgBox ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><img src="img/yoyoOfficialWebsite_mobile/boxImg1.png"/></div>
+	            	<a href="#" class="downLoadBtn ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">立即下载</a>
+	            	<span class="bottomArrow"><img src="img/yoyoOfficialWebsite_mobile/bottomArrow.png"/></span>
+	            </div>
+	            <div class="swiper-slide" id="slide2">
+	            	<div class="imgBox ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><img src="img/yoyoOfficialWebsite_mobile/boxImg2.png"/></div>
+	            	<a href="#" class="downLoadBtn ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">立即下载</a>
+	            	<span class="bottomArrow"><img src="img/yoyoOfficialWebsite_mobile/bottomArrow.png"/></span>
+	            </div>
+	            <div class="swiper-slide" id="slide3">
+	            	<div class="imgBox ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><img src="img/yoyoOfficialWebsite_mobile/boxImg3.png"/></div>
+	            	<a href="#" class="downLoadBtn ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">立即下载</a>
+	            	<span class="bottomArrow"><img src="img/yoyoOfficialWebsite_mobile/bottomArrow.png"/></span>
+	            </div>
+	            <div class="swiper-slide" id="slide4">
+	            	<div class="imgBox ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><img src="img/yoyoOfficialWebsite_mobile/boxImg4.png"/></div>
+	            	<a href="#" class="downLoadBtn ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">立即下载</a>
+	            </div>
+	        </div>
+	        
+	    </div>
+		<!-- Swiper JS -->
+		<script src="js/Swiper-3.4.2/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Swiper-3.4.2/dist/js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Initialize Swiper -->
+	    <script>
+		    var swiper = new Swiper('.swiper-container', {
+		    	onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			      swiperAnimateCache(swiper); //隐藏动画元素 
+			      swiperAnimate(swiper); //初始化完成开始动画
+			    }, 
+			    onSlideChangeEnd: function(swiper){ 
+			      swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			    },
+		        pagination: '.swiper-pagination',
+		        direction: 'vertical'
+		    });
+		    
+	    </script>
+	</body>
+</html>
