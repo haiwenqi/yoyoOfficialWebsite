@@ -7,12 +7,12 @@
 		<link rel="icon" href="img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/yoyoOfficialWebsite_pc.css" />
-		<title>YOYO官方网站</title>
+		<title>YOYO</title>
 		
 		<script type="text/javascript">
 			var isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
 			if(isMobile) {
-				window.location.href = 'http://127.0.0.1:8020/yoyoOfficialWebsite/m.yoyo.html';
+				window.location.href = 'http://192.168.137.1/yoyoOfficialWebsite/m.index.html';
 			}
 		</script>
 	</head>
@@ -32,36 +32,44 @@
 				<ul class="clear">
 					<li><img src="img/yoyoOfficialWebsite_pc/secondPageImg_01.png" /></li>
 					<li><img src="img/yoyoOfficialWebsite_pc/secondPageImg_02.png" /></li>
-					<li><img src="img/yoyoOfficialWebsite_pc/secondPageImg_03.png" /></li>
+					<li style="margin-right: 0;"><img src="img/yoyoOfficialWebsite_pc/secondPageImg_03.png" /></li>
 				</ul>
 			</div>
 			<div id="thirdPage">
 				<p>探索新奇&nbsp;&nbsp;达人就在身边</p>
 				<ul class="clear">
 					<li class="thirdPageImg_01">
-						<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_01.png" />
-						<div class="ovrly"></div>
+						<a href="javascritp:;">
+							<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_01.png" />
+							<div class="ovrly"></div>
+						</a>
 					</li>
 					<li class="thirdPageImg_02">
-						<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_02.png" />
-						<div class="ovrly"></div>
+						<a href="javascritp:;">
+							<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_02.png" />
+							<div class="ovrly"></div>
+						</a>
 					</li>
 					<li class="thirdPageImg_03">
-						<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_03.png" />
-						<div class="ovrly"></div>
+						<a href="javascritp:;">
+							<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_03.png" />
+							<div class="ovrly"></div>
+						</a>
 					</li>
-					<li class="thirdPageImg_04">
-						<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_04.png" />
-						<div class="ovrly"></div>
+					<li class="thirdPageImg_04"">
+						<a href="javascritp:;">
+							<img src="img/yoyoOfficialWebsite_pc/thirdPageIng_04.png" />
+							<div class="ovrly"></div>
+						</a>
 					</li>
 				</ul>
 			</div>
-			<footer>
-				<img src="img/yoyoOfficialWebsite_pc/QRcode_footer.jpg" />
+			<div id="footer">
+				<img src="img/yoyoOfficialWebsite_pc/wxQRcode.jpg" />
 				<p>微信公众号</p>
 				<p>YOYO 2017 &copy; All Rights Reserved</p>
 				<p>京ICP备 11036675号-2</p>
-			</footer>
+			</div>
 			
 			
 			<!--遮罩层-->
@@ -70,27 +78,21 @@
 			<div class="pop">
 				<span class="pop-close"><img src="img/yoyoOfficialWebsite_pc/close_icon.png"/></span>
 				<div class="pop-content">
-					<img src="img/yoyoOfficialWebsite_pc/QRcode_header.jpg"/>
+					<img src="img/yoyoOfficialWebsite_pc/downLoadQRcode.png"/>
 					<p>Android/ios</p>
 					<p>扫描二维码下载</p>
 				</div>
 			</div>
 		</div>
 
-		<script src="js/jquery/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
 		        $('.pop-close').click(function () {
 		            $('.bgPop,.pop').hide();
-		            $("body,.outterWrap").height("auto").css({
-					  "overflow": "scroll"
-					});
 		        });
 		        $('.downLoadBtn').click(function () {
 		            $('.bgPop,.pop').show();
-		            $("body,.outterWrap").height($(window).height()).css({
-					  "overflow-y": "hidden"
-					});
 		        });
 		    })
 		</script>
